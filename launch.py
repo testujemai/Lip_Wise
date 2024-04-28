@@ -411,6 +411,6 @@ with gr.Blocks(title='Lip-Wise', theme=theme, css = file_check.CSS_FILE_PATH) as
             line_breaks=True)
 
 if args.colab:
-    ui.queue().launch()
+    ui.queue().launch(share=False)
 else:
-    ui.queue().launch()
+    ui.queue().launch(share=False)
